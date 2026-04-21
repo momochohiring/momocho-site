@@ -29,7 +29,7 @@
             <input type="text" name="name" placeholder="Full Name" required>
             <input type="tel" name="phone" placeholder="Phone Number" required>
             <input type="email" name="email" placeholder="Email Address" required>
-            <input type="date" id="appDate" name="appDate" readonly>
+            <input type="date" id="appDate" name="appDate" readonly style="display:none;">
                 <script>
                     const today = new Date().toISOString().split('T')[0];
                  document.getElementById('appDate').value = today;
