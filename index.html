@@ -29,7 +29,11 @@
             <input type="text" name="name" placeholder="Full Name" required>
             <input type="tel" name="phone" placeholder="Phone Number" required>
             <input type="email" name="email" placeholder="Email Address" required>
-            <input type="date" name="appDate" required>
+            <input type="date" id="appDate" name="appDate" readonly>
+                <script>
+                    const today = new Date().toISOString().split('T')[0];
+                 document.getElementById('appDate').value = today;
+                </script>
             
             <select name="experience" required>
                 <option value="" disabled selected>Service Experience?</option>
